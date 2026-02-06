@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setegn Abebe | Portfolio</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/vite.svg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="dark-theme">
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <div class="container nav-content">
+            <a href="#" class="logo">  <img src="assets/logo.png" alt="SetegnA Logo"></a>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                        <i data-lucide="moon" id="theme-icon"></i>
+                    </button>
+                </li>
+                <li>
+                    <button id="network-toggle" class="theme-btn" aria-label="Network theme">
+                        <i data-lucide="refresh-cw" id="network-icon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="mobile-menu-btn" id="menu-toggle">
+                <i data-lucide="menu"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-bg">
+            <canvas id="particle-canvas"></canvas>
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+        <div class="container hero-content">
+            <h1 class="reveal">Hello, I'm  <span class="text-gradient">  Setegn Abebe</span></h1>
+            <h2 class="reveal-delay-1">DevOps Engineer & Infrastructure Architect</h2>
+            <p class="reveal-delay-2">DevOps Engineer specializing in Linux system administration, Kubernetes
+                orchestration, CI/CD automation, cloud migration, and infrastructure security. Designed scalable, highly
+                available systems achieving 99.9% uptime.
+            </p>
+            <div class="hero-btns reveal-delay-3">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+
+            <!-- Role selector and terminal preview -->
+            <div class="role-tools reveal-delay-3">
+                <div class="tools-bar">
+                    <a class="tool-btn" href="https://github.com/setegnabebe" target="_blank"><i data-lucide="github"></i>Git</a>
+                    <a class="tool-btn" href="https://linkedin.com/in/setegn-abebe25" target="_blank"><i data-lucide="linkedin"></i>LinkedIn</a>
+                </div>
+
+                <div class="terminal-card glass">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <div class="terminal-title">remote@setegn:~</div>
+                    </div>
+                    <pre class="ssh-snippet" id="ssh-snippet">DevOps Engineer</pre>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <p>I am a DevOps Engineer with 2+ years of experience optimizing software delivery pipelines,
+                            infrastructure automation, and containerization. Specialized in Linux system administration,
+                            Kubernetes orchestration, CI/CD automation, cloud migration, and infrastructure security with best system uderstanding skill sets. I
+                            design scalable, highly available systems achieving 99.9% uptime, and I am skilled in GitOps
+                            workflows and observability solutions.</p>
+                        <p>With a Bachelor's Degree in Electrical and computer Engineering from Wollega University, I bridge the
+                            gap between software development and stable infrastructure operations. I am committed to
+                            delivering efficient, secure, and reliable infrastructure. I am a native Amharic speaker and
+                            proficient in English.</p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <h3>3+</h3>
+                                <p>Years Exp.</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>10+</h3>
+                                <p>Cloud VM Management</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>15+</h3>
+                                <p>Tools Mastered</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section section-padding bg-alt">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Technical <span class="text-gradient">Expertise</span></h2>
+                    <p class="section-subtitle">A comprehensive toolkit for modern DevOps and Infrastructure
+                        Engineering.</p>
+                </div>
+                <div class="skills-grid" id="skills-container">
+                    <!-- Skills injected by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Professional <span class="text-gradient">Journey</span></h2>
+                </div>
+                <div class="timeline" id="experience-container">
+                    <!-- Experience injected by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section section-padding bg-alt">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+                    <p class="section-subtitle">Real-world impact through automation and migration.</p>
+                </div>
+                <div class="projects-grid" id="projects-container">
+                    <!-- Projects injected by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Certifications & <span class="text-gradient">Badges</span></h2>
+                </div>
+                <div class="certs-grid" id="certs-container">
+                    <!-- Certs injected by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section section-padding bg-alt">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+                    <p class="section-subtitle">Interested in collaboration or infrastructure consulting? Reach out!</p>
+                </div>
+                <div class="contact-wrapper">
+                    <div class="contact-info reveal">
+                        <div class="contact-item">
+                            <i data-lucide="mail"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>setegnabebe25@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>(+251) 970738908</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="map-pin"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Addis Ababa, Ethiopia</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/setegnabebe" target="_blank" class="social-link"><i
+                                    data-lucide="github"></i></a>
+                            <a href="https://linkedin.com/in/setegn-abebe25" target="_blank" class="social-link"><i
+                                    data-lucide="linkedin"></i></a>
+                            <a href="#" class="social-link"><i data-lucide="twitter"></i></a>
+                        </div>
+                    </div>
+                    <form action="https://formspree.io/f/your-id" method="POST" class="contact-form reveal">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" id="submit-btn" class="btn btn-primary">Send Message</button>
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Setegn Abebe. Built for performance and modern web standards.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
