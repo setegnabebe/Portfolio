@@ -65,17 +65,13 @@ const experiences = [
         ]
     },
     {
-        role: 'Intern - DevOps Engineer',
-        company: 'Atlas Computer Technology',
-        period: 'Jun 2022 - Dec 2023',
-        location: 'Addis Ababa, Ethiopia',
+        role: 'Intern - softwre Engineer',
+        company: 'Hawassa bureau of Technology',
+        period: 'Jun 2022 - Mar 2023',
+        location: 'Hawassa, Ethiopia',
         description: [
-            'Containerized applications using Docker and Kubernetes for better scalability.',
-            'Managed web servers (Nginx, Apache) and load balancers (HAProxy).',
-            'Integrated ELK stack for centralized logging, alerting, and visualization.',
-            'Administered Linux-based server infrastructure ensuring 99.9% uptime.',
-            'Deployed Zabbix and Grafana for server and application monitoring.',
-            'Managed firewall configurations using pfSense and conducted security audits.'
+            'Internship Management system for the ICT Center.',
+            'Develop using Laravel framework php .'
         ]
     }
 ];
