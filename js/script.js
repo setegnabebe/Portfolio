@@ -3,7 +3,7 @@ const skillCategories = [
     {
         title: 'Programming & Apps',
         icon: 'code',
-        skills: ['Python', 'Java', 'JavaScript', 'Shell Script', 'YAML', 'WildFly', 'Tomcat', 'IIS', 'Express.js', 'NextJS', 'React', 'Node.js', 'Spring Boot']
+        skills: ['Python', 'Java', 'JavaScript', 'Shell Script', 'YAML', 'WildFly', 'Tomcat', 'IIS', 'GO', 'React', 'Node.js', 'Spring Boot']
     },
     {
         title: 'Cloud & Virtualization',
@@ -28,7 +28,7 @@ const skillCategories = [
     {
         title: 'Databases & Servers',
         icon: 'database',
-        skills: ['MySQL', 'PostgreSQL', 'Oracle', 'Redis', 'Apache Doris', 'Nginx', 'Apache', 'HAProxy', 'Traefik', 'Caddy', 'Zimbra', 'Mailcow', 'Microsoft Exchange']
+        skills: ['MySQL', 'PostgreSQL', 'Clickhouse', 'Oracle', 'Redis', 'Apache Doris', 'Nginx', 'Apache', 'HAProxy', 'Traefik', 'Caddy', 'Zimbra', 'Mailcow', 'Microsoft Exchange']
     }
 ];
 
@@ -94,6 +94,14 @@ const projects = [
         external: '#'
     },
     {
+        title: 'VPN Tunnel Integration with Banking systems',
+        description: 'For Better security and stable connection create Tunnel to integrate payment systems with financial Institutions.',
+        icon: 'layers',
+        tags: ['IPsec VPN'],
+        github: '#',
+        external: '#'
+    },
+    {
         title: 'USSD & Mobile Banking Platform',
         description: 'Implemented transaction-critical USSD systems. Optimized flows for high transaction volume and integrated real-time monitoring to ensure zero-downtime banking.',
         icon: 'zap',
@@ -105,10 +113,9 @@ const projects = [
 
 const certifications = [
     'Programming Fundamentals | Udacity',
-    'Android Developer Fundamentals | Udacity',
-    'Next-Gen Network Security | IT Masters',
-    'Cyber Threat Management | Cisco Networking Academy',
-    'Endpoint Security | Cisco Networking Academy'
+    'AWS Command Line Interface (CLI) Basics',
+    'Advanced Testing Practices Using AWS DevOps Tools',
+    'Getting Started with DevOps on AWS'
 ];
 
 /* Main Initialization */
@@ -485,7 +492,7 @@ function initTerminalTyping() {
     const el = document.getElementById('ssh-snippet');
     if (!el) return;
 
-    const phrases = ['DevOps Engineer', 'Web-Hosting Engineer', 'System Administrator', 'Network Engineer'];
+    const phrases = ['DevOps Engineer', 'System Administrator', 'Network Engineer'];
     let pIndex = 0;
     let charIndex = 0;
     let typing = true;
